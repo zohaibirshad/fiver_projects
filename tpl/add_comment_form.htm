@@ -1,0 +1,22 @@
+<div style="margin:0 18px 0 18px">
+<h1>[PAGE[TITLE]]</h1>
+
+<p style="color:red;font-weight:bold">[COM[MSG]]</p>
+
+<form action="/" method="get">
+<input type="hidden" name="mod" value="addcomment" />
+<input type="hidden" name="c" value="insert" />
+<input type="hidden" name="id" value="[COM[TEXTID]]" />
+
+<div style="border:1px solid #999999">
+<table style="width:100%;background-color:#cccccc">
+<tr><td>Tip</td><td><a href="?mod=entry&amp;id=[COM[TEXTID]]">[COM[TITLE]]</a></td></tr>
+<tr><td>Dit&nbsp;navn</td><td><input name="name" value="" style="width:300px" /></td></tr>
+<tr><td>Din&nbsp;email&nbsp;&nbsp;</td><td><input name="email" value="" style="width:300px" /></td></tr>
+<tr><td style="vertical-align:top">Tip</td><td><textarea name="comment" cols="30" rows="8" style="width:500px"></textarea></td></tr>
+<tr><td>&nbsp;</td><td><input type="submit" value="Send" /></td></tr>
+</table>
+</form>
+</div>
+
+</div>

@@ -1,0 +1,40 @@
+<h1 style="padding:10x 10px 10px 10px">Rediger: [HELP[TITLE]]</h1>
+<div style="padding:0 10px 10px 10px">
+
+<form action="help[EXT]" method="get">
+
+<table>
+<tr>
+<td style="width:80px">ID</td>
+<td style="font-weight:bold">[HELP[ID]]</td>
+</tr>
+<tr>
+<td style="width:80px">Titel</td>
+<td><input name="title" value="[HELP[TITLE]]" style="width:500px" /></td>
+</tr>
+<tr>
+<td style="vertical-align:top">Indhold</td>
+<td><textarea name="content" rows="20" cols="40" style="width:500px">[HELP[CONTENT]]</textarea></td>
+</tr>
+<tr>
+<td style="vertical-align:top">&nbsp;</td>
+<td style="padding:10px 0 0 0">
+<input type="submit" value="Opdater" />&nbsp;
+<input type="reset" value="Forfra" />
+</td>
+</tr>
+</table>
+
+<input type="hidden" name="id" value="[HELP[ID]]" />
+<input type="hidden" name="c" value="u" />
+</form>
+
+<!--
+[TAG[COMMENTS]]
+<p>&nbsp;</p>
+<div style="width:594px;border:1px solid #999999;padding:4px;background-color:#dddddd">
+[HELP[COMMENTS]]
+</div>
+[TAG[/COMMENTS]]
+-->
+</div>

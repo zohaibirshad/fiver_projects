@@ -1,0 +1,64 @@
+
+<div style="margin:20px">
+<h1>[PAGE[TITLE]]</h1>
+
+<div><a href="/?mod=entry&amp;id=[ENTRY[ID]]">G&aring; til tekst</a><br /><br /></div>
+
+<form action="/" method="post">
+<input type="hidden" name="mod" value="entry" />
+<input type="hidden" name="c" value="update" />
+<input type="hidden" name="id" value="[ENTRY[ID]]" />
+<b>Titel</b><br />
+<input name="title" value="[ENTRY[TITLE]]" style="width:500px" /><br />
+<br />
+<b>Tekst</b><br />
+<textarea name="text" cols="30" rows="12" style="width:500px">[ENTRY[TEXT]]</textarea><br />
+<br />
+<input type="submit" value="Opdater" />&nbsp;<input type="reset" value="Forfra" />
+</form>
+
+<div style="margin:10px 0 10px 0"><hr size="1px" /></div>
+
+<table style="width:500px">
+<tr>
+
+<td>
+<form action="/">
+<input type="hidden" name="mod" value="entry" />
+<input type="hidden" name="c" value="remos" />
+<input type="hidden" name="id" value="[ENTRY[ID]]" />
+<b>Valgte OS</b><br />
+<select name="os" style="width:245px" size="5">
+[ENTRY[C-OS]]
+</select>
+<br />
+<input type="submit" value="Fjern" />
+</form>
+</td>
+
+<td>
+<form action="/">
+<input type="hidden" name="mod" value="entry" />
+<input type="hidden" name="c" value="addos" />
+<input type="hidden" name="id" value="[ENTRY[ID]]" />
+<b>Mulige OS</b><br />
+<select name="os" style="width:245px" size="5">
+[ENTRY[P-OS]]
+</select>
+<br />
+<input type="submit" value="Tilf&oslash;j" />
+</form>
+</td>
+
+</tr>
+</table>
+
+<div style="margin:10px 0 10px 0"><hr size="1px" /></div>
+
+<div style="text-align:right"><a href="/?mod=entry&amp;c=delete&amp;id=[ENTRY[ID]]" style="background-color:red;color:white;padding:4px">&nbsp;SLET&nbsp;</a>&nbsp;&nbsp;&nbsp;</div>
+
+<div style="margin:10px 0 10px 0"><hr size="1px" /></div>
+
+
+</div>
+

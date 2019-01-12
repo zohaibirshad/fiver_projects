@@ -1,0 +1,32 @@
+<div style="padding:1px 10px 10px 10px">
+<h1>[PAGE[TITLE]]</h1>
+
+<hr />
+
+<form action="comment[EXT]" method="get">
+
+<table border="0">
+<tr>
+
+<td>
+<b>[COMMENT[TEXTTITLE]]</b></td>
+</tr>
+
+<td style="padding:20px 0 0 0">
+<div>Kommentar:</div>
+<textarea cols="40" rows="10" name="content" style="width:580px">[COMMENT[CONTENT]]</textarea></td>
+</tr>
+
+<td>
+<input type="submit" value="Send" />
+<input type="reset" value="Forfra" />
+</tr>
+
+</table>
+
+<input type="hidden" name="textid" value="[COMMENT[TEXTID]]" />
+<input type="hidden" name="id" value="[COMMENT[ID]]" />
+<input type="hidden" name="c" value="[COMMENT[CMD]]" />
+</form>
+
+</div>

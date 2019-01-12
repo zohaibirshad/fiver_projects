@@ -1,0 +1,33 @@
+<div style="border:1px solid #666666;margin-bottom:10px">
+<form style="display:inline">
+<input type="hidden" name="mod" value="usercom" />
+<input type="hidden" name="c" value="do" />
+<input type="hidden" name="cid" value="[COM[ID]]" />
+
+<table style="width:100%;background-color:#dddddd">
+<tr>
+<td><b>Dato/tid:</b>&nbsp;<input name="date_created" value="[COM[DATE]]" style="width:130px" /></td>
+<td style="text-align:center"><b>Navn:</b>&nbsp;<input name="username" value="[COM[NAME]]" /></td>
+<td style="text-align:right"><b>Email:</b>&nbsp;<input name="useremail" value="[COM[EMAIL]]" /></td>
+</tr>
+<tr><td colspan="3" style="padding-top:4px"><b>Artikel:</b> <a href="/?mod=entry&amp;id=[COM[TEXTID]]">[COM[TITLE]]</a></td></tr>
+</table>
+
+<table style="width:100%;border-top:1px solid #666666;background-color:#eeeeee">
+<tr><td><textarea name="comment" rows="4" cols="3" style="width:564px">[COM[TEXT]]</textarea></td></tr>
+</table>
+
+<table style="width:100%;border-top:1px solid #666666;background-color:#dddddd">
+<tr><td>
+<input type="submit" name="edit" value="Opdater" />
+<input type="reset" value="Gendan" />
+&nbsp;&nbsp;&nbsp;
+<input type="submit" name="ok" value="Accepter" />
+</td><td style="text-align:right">
+<input type="submit" name="remove" value="Slet" />
+</td></tr>
+</table>
+
+</form>
+</div>
+
